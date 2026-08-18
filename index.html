@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>My Dashboard</h2>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Analytics</a>
+            <a href="#">Reports</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Sales Analytics</h1>
+
+        <div class="charts">
+
+            <div class="chart-box">
+                <h3>Monthly Sales</h3>
+                <canvas id="line"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <h3>Weekly Sales</h3>
+                <canvas id="bar"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <h3>Cars Sold</h3>
+                <canvas id="pie"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <h3>Car Types</h3>
+                <canvas id="doughnut"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <h3>Price vs Mileage</h3>
+                <canvas id="scatter"></canvas>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
